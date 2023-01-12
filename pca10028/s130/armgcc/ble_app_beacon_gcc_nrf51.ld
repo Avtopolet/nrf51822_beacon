@@ -5,8 +5,8 @@ GROUP(-lgcc -lc -lnosys)
 
 MEMORY
 {
-
-  FLASH (rx) : ORIGIN = 0x1c000, LENGTH = 256k - 0x1c00
+  / значения для чипа 51822 xxaa
+  FLASH (rx) : ORIGIN = 0x1c000, LENGTH = 256k - 0x1c00   
   RAM (rwx) :  ORIGIN = 0x20002800, LENGTH = 16k - 0x2800
 
 }

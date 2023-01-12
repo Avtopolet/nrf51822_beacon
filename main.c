@@ -170,7 +170,7 @@ static void ble_stack_init(void)
     // Enable BLE stack 
     nrf_gpio_pin_write(29,0); 
     nrf_delay_ms(800);
-    nrf_gpio_pin_write(29,1);    //1
+    nrf_gpio_pin_write(29,1);    //1 тестовый мырг светодиодом
     nrf_delay_ms(800);
 
     
@@ -180,7 +180,7 @@ static void ble_stack_init(void)
     
     
     // Initialize the SoftDevice handler module.
-    SOFTDEVICE_HANDLER_INIT(NRF_CLOCK_LFCLKSRC_RC_250_PPM_TEMP_16000MS_CALIBRATION, NULL);
+    SOFTDEVICE_HANDLER_INIT(NRF_CLOCK_LFCLKSRC_RC_250_PPM_TEMP_16000MS_CALIBRATION, NULL); //поставлено это значение, с 20 ppm не запускалось
 
         
 

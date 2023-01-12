@@ -1,5 +1,8 @@
 PROJECT_NAME := ble_app_beacon_s130_pca10028
-
+# Из исходного файла проведены замены
+# xxac -> xxaa
+# 51422 -> 51822
+# компилировать make nrf51822_xxaa_s130, иначе ошибка - не видит какой-то файл
 export OUTPUT_FILENAME
 #MAKEFILE_NAME := $(CURDIR)/$(word $(words $(MAKEFILE_LIST)),$(MAKEFILE_LIST))
 MAKEFILE_NAME := $(MAKEFILE_LIST)
